@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.access.redhat.com/ubi8/nginx-120:latest
+        image: ghcr.io/reseaux3d-sudo/nginx-demo-repo:37f0eb2253055542dd76c60041b803f8a5a92cb6
         command: ["nginx", "-g", "daemon off;"]   # commande explicite
         ports:
         - containerPort: 8080
