@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: nginx-demo
 spec:
-  replicas: 3
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: nginx-demo
@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ghcr.io/reseaux3d-sudo/nginx-demo-repo:8a06b5771f5bbdbdc0b1886aefe4e90b4fdfe101
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         command: ["nginx", "-g", "daemon off;"]   # commande explicite
         ports:
         - containerPort: 8080
