@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: ghcr.io/reseaux3d-sudo/nginx-demo-repo
-  tag: 936cc831ab0813c85f3be5d113a44d0fd325d704
+  tag: a8863d99989b41e02b92a84be0716b2a034e7f0e
   pullPolicy: IfNotPresent
 
 service:
