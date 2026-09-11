@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: registry.access.redhat.com/ubi9/nginx-124
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+  targetPort: 8080
