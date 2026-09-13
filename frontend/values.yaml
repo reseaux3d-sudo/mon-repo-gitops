@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: registry.access.redhat.com/ubi9/nginx-124
+  repository: docker.io/nginxinc/nginx-unprivileged
   tag: latest
   pullPolicy: IfNotPresent
 
