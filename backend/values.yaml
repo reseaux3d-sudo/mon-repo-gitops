@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: docker.io/nginxinc/nginx-unprivileged
+  tag: stable-alpine
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+  targetPort: 8080
