@@ -1,1 +1,4 @@
 replicaCount: 4
+
+config:
+  logLevel: warn
