@@ -1,4 +1,8 @@
 replicaCount: 2
 
+image:
+  repository: ghcr.io/reseaux3d-sudo/nginx-demo-repo
+  tag: 28c44683f3a55cb5287a4c3608361c58d755988b
+
 config:
   logLevel: info
